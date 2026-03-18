@@ -18,7 +18,7 @@ namespace CosmosDBClientSample
         {
             try
             {
-                await CreateCosmosDB();
+                await CreateCosmosDbAsync();
             }
             catch (CosmosException de)
             {
@@ -35,12 +35,21 @@ namespace CosmosDBClientSample
             }
         }
 
-        public static async Task CreateCosmosDB()
+        public static async Task CreateCosmosDbAsync()
         {
+            // CosmosClient is thread-safe and is typically kept as a single
+            // application-wide instance. It is shown inline here for simplicity.
             using var cosmosClient = new CosmosClient(endpoint, key);
-            Database database = await cosmosClient.CreateDatabaseIfNotExistsAsync(databaseId);
-            ContainerProperties cp = new ContainerProperties(containerId, "/DestinationName");
-            Container container = await database.CreateContainerIfNotExistsAsync(cp);
+            Database database = 
+                await cosmosClient.CreateDatabaseIfNotExistsAsync(databaseId);
+            
+            // /DestinationName is the partition key path.
+            ContainerProperties containerProperties =
+                new ContainerProperties(containerId, "/DestinationName");
+
+            Container container =
+                await database.CreateContainerIfNotExistsAsync(containerProperties);
+
             await AddItemsToContainerAsync(container);
         }
 
