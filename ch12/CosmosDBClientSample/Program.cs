@@ -8,8 +8,11 @@ namespace CosmosDBClientSample
 {
     class Program
     {
-        private const string endpoint = "https://[your-endpoint].documents.azure.com:443/";
-        private const string key = "[yourkey]";
+        // These values come from your Azure Cosmos DB account in the Azure portal.
+        // - endpoint: the account URI / endpoint
+        // - key: one of the account keys shown in the Keys section
+        private const string endpoint = "<your-cosmos-account-endpoint>";
+        private const string key = "<your-cosmos-account-key>";
 
         private const string databaseId = "WWTravelClub";
         private const string containerId = "Destination";
