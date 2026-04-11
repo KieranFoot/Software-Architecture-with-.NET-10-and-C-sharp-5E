@@ -48,24 +48,24 @@ namespace performance_issues
         #region Exceptions
         private static string ParseIntWithTryParse()
         {
-            string result = string.Empty;
-            if (int.TryParse(result, out var value))
-                result = value.ToString();
+            int? result;
+            if (int.TryParse(string.Empty, out var value))
+                result = value;
             else
-                result = "There is no int value";
+                result = null;
             return $"Final result: {result}";
         }
 
         private static string ParseIntWithException()
         {
-            string result = string.Empty;
+            int? result;
             try
             {
-                result = Convert.ToInt32(result).ToString();
+                result = Convert.ToInt32(string.Empty);
             }
             catch (Exception)
             {
-                result = "There is no int value";
+                result = null;
             }
             return $"Final result: {result}";
         }
