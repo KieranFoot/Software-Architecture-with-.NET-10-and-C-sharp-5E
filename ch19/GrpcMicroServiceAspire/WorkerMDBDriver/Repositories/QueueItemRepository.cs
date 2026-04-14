@@ -30,7 +30,7 @@ namespace WorkerMDBDriver.Repositories
             
         }
 
-        public QueueItemAggregate Enqueue(PurchaseInfoDTO mssageInfo)
+        public QueueItemAggregate Enqueue(PurchaseInfoDTO messageInfo)
         {
             
             var toAdd = new QueueItem

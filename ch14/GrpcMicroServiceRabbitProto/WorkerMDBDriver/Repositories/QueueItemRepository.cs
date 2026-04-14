@@ -30,17 +30,17 @@ namespace WorkerMDBDriver.Repositories
             
         }
 
-        public QueueItemAggregate Enqueue(PurchaseInfoDTO mssageInfo)
+        public QueueItemAggregate Enqueue(PurchaseInfoDTO messageInfo)
         {
             
             var toAdd = new QueueItem
             {
-                Cost= mssageInfo.Cost,
+                Cost= messageInfo.Cost,
                 ExtractionTime= DateTimeOffset.MinValue,
-                MessageId= mssageInfo.MessageId,
-                Location= mssageInfo.Location,
+                MessageId= messageInfo.MessageId,
+                Location= messageInfo.Location,
                 Time= mssageInfo.Time,
-                PurchaseTime= mssageInfo.PurchaseTime,
+                PurchaseTime= messageInfo.PurchaseTime,
             };
             ctx.QueueItems.Add(toAdd);
             return new QueueItemAggregate(toAdd);
