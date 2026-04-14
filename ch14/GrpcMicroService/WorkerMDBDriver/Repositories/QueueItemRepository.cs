@@ -7,7 +7,7 @@ using System.Text;
 using WorkerMDBDriver.Models;
 using WorkerMDomainModel.Models;
 using WorkerMDomainServices.DTOs;
-using WorkerMDomainServices.IRepositories;
+using WorkerMDomainServices.Repositories;
 
 namespace WorkerMDBDriver.Repositories
 {

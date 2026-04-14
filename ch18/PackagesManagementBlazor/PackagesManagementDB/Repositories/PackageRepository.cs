@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using PackagesManagementDB.Models;
 using DBDriver;
-using PackagesManagementDomainServices.IRepositories;
+using PackagesManagementDomainServices.Repositories;
 using PackagesManagementDomainModel.Aggregates;
 using PackagesManagementDomainModel.Events;
 using PackagesManagementDomainServices.DTOs;

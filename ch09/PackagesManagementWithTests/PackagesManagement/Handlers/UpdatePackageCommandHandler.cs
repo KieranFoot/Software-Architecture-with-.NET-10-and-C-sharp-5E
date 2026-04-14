@@ -3,7 +3,7 @@ using DDD.DomainLayer;
 using Microsoft.EntityFrameworkCore;
 using PackagesManagement.Commands;
 using PackagesManagementDomain.Aggregates;
-using PackagesManagementDomain.IRepositories;
+using PackagesManagementDomain.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;

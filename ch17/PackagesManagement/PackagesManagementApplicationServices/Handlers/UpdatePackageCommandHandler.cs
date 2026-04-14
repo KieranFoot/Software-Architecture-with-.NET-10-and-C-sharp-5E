@@ -1,7 +1,7 @@
 ﻿using DDD.ApplicationLayer;
 using PackagesManagementApplicationServices.Commands;
 using PackagesManagementDomainModel.Aggregates;
-using PackagesManagementDomainServices.IRepositories;
+using PackagesManagementDomainServices.Repositories;
 using RoutesPlanningDomainLayer.Tools;
 
 

@@ -1,5 +1,5 @@
 ﻿using PackagesManagementDomainServices.DTOs;
-using PackagesManagementDomainServices.IRepositories;
+using PackagesManagementDomainServices.Repositories;
 using System.Collections.ObjectModel;
 
 namespace PackagesManagementApplicationServices.Queries

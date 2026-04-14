@@ -1,7 +1,7 @@
 ﻿using DDD.ApplicationLayer;
 using PackagesManagementDomain.Aggregates;
 using PackagesManagementDomain.Events;
-using PackagesManagementDomain.IRepositories;
+using PackagesManagementDomain.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;

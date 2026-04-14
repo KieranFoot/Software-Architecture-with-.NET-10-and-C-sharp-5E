@@ -1,7 +1,7 @@
 ﻿using DDD.ApplicationLayer;
 using PackagesManagementDomainModel.Aggregates;
 using PackagesManagementDomainModel.Events;
-using PackagesManagementDomainServices.IRepositories;
+using PackagesManagementDomainServices.Repositories;
 
 
 namespace PackagesManagement.Handlers

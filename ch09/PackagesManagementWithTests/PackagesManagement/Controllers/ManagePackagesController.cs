@@ -10,7 +10,7 @@ using PackagesManagement.Commands;
 using PackagesManagement.Models;
 using PackagesManagement.Models.Packages;
 using PackagesManagement.Queries;
-using PackagesManagementDomain.IRepositories;
+using PackagesManagementDomain.Repositories;
 
 namespace PackagesManagement.Controllers
 {

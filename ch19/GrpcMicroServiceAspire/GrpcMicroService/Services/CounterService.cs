@@ -1,6 +1,6 @@
 ﻿using DDD.DomainLayer;
 using Grpc.Core;
-using WorkerMDomainServices.IRepositories;
+using WorkerMDomainServices.Repositories;
 
 namespace GrpcMicroService.Services
 {

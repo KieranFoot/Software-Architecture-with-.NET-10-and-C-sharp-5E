@@ -1,5 +1,5 @@
 ﻿using DDD.ApplicationLayer;
-using PackagesManagementDomainServices.IRepositories;
+using PackagesManagementDomainServices.Repositories;
 using PackagesManagementDomainModel.Events;
 using PackagesManagementDomainModel.Aggregates;
 

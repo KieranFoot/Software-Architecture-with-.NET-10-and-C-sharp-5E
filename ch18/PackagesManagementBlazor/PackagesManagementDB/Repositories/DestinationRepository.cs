@@ -1,7 +1,7 @@
 ﻿using DDD.DomainLayer;
 using Microsoft.EntityFrameworkCore;
 using PackagesManagementDB.Models;
-using PackagesManagementDomainServices.IRepositories;
+using PackagesManagementDomainServices.Repositories;
 using DBDriver;
 using PackagesManagementDomainModel.Aggregates;
 using PackagesManagementDomainServices.DTOs;

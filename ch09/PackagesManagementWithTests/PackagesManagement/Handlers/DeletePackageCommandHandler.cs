@@ -1,7 +1,7 @@
 ﻿using DDD.ApplicationLayer;
 using DDD.DomainLayer;
 using PackagesManagement.Commands;
-using PackagesManagementDomain.IRepositories;
+using PackagesManagementDomain.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;

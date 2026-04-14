@@ -1,6 +1,6 @@
 ﻿using DDD.ApplicationLayer;
 using PackagesManagementApplicationServices.Commands;
-using PackagesManagementDomainServices.IRepositories;
+using PackagesManagementDomainServices.Repositories;
 
 
 namespace PackagesManagementApplicationServices.Handlers

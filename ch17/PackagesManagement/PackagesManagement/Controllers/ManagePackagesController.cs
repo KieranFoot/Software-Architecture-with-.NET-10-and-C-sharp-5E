@@ -5,7 +5,7 @@ using PackagesManagement.Models.Packages;
 using PackagesManagementApplicationServices.Commands;
 using PackagesManagementApplicationServices.Queries;
 using PackagesManagementDomainServices.DTOs;
-using PackagesManagementDomainServices.IRepositories;
+using PackagesManagementDomainServices.Repositories;
 using System.Collections.ObjectModel;
 
 namespace PackagesManagement.Controllers

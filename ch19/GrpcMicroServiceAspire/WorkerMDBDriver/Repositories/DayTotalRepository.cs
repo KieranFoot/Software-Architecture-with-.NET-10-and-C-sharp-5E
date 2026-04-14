@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Text;
 using WorkerMDBDriver.Models;
 using WorkerMDomainModel.Models;
-using WorkerMDomainServices.IRepositories;
+using WorkerMDomainServices.Repositories;
 
 namespace WorkerMDBDriver.Repositories
 {

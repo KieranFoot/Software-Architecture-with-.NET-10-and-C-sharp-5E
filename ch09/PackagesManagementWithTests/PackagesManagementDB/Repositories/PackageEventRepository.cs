@@ -1,6 +1,6 @@
 ﻿using DDD.DomainLayer;
 using PackagesManagementDomain.Aggregates;
-using PackagesManagementDomain.IRepositories;
+using PackagesManagementDomain.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Text;

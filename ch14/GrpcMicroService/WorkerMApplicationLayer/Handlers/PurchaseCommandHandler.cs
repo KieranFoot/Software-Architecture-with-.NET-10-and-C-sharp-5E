@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 using WorkerMApplicationServices.Commands;
-using WorkerMDomainServices.IRepositories;
+using WorkerMDomainServices.Repositories;
 
 namespace WorkerMApplicationServices.Handlers
 {
